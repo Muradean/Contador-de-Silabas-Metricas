@@ -27,3 +27,8 @@ O decoder recebe esse hidden state e cell state do encoder e cada célula LSTM v
 R: Sim, o facto das células LSTM partilharem parâmetros é o que lhes permite generalizar para sequências de tamanhos diferentes, (para palavras de curta e maior duração), mas de notar que estes parâmetros apenas são partilhados dentro da mesma LSTM. 
 
 Neste código ao todo são utilizadas 3 LSTM´s, duas como encoder que constituem a LSTM bidireccional e uma como decoder que constitui a LSTM unidirecional. Os parâmetros destas 3 LSTM´s são diferentes, (por exemplo: os padrões para aprender as regras que codificam uma palavra de frente para trás são diferente dos parâmetros que a codificam de trás para a frente) apenas interiormente as células de cada uma são iguais.
+
+
+#### Demonstração:
+
+https://www.youtube.com/watch?v=bUHtoNzw9SI
