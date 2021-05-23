@@ -4,9 +4,9 @@ Notebook com um modelo que realiza divisão silábica e classifcação tónica c
 Aceitam-se contribuições (pull requests)
 
 
-### PERGUNTAS:
+## PERGUNTAS:
 
-1) Porque é que usaste uma LSTM bidireccional como encoder em vez de uma LSTM unidireccional ?
+#### 1) Porque é que usaste uma LSTM bidireccional como encoder em vez de uma LSTM unidireccional ?
 
 R: É conhecido na literatura que para a esmagadora maioria dos problemas seq2seq utilizar uma LSTM bidireccional como encoder em vez de uma unidireccional gera resultados superiores. Mas também faz sentido para a task de separação da palavra em sílabas, por exemplo:
 
@@ -22,7 +22,7 @@ Suponhamos que o encoder em ambos os casos já emitiu um "b" e um "a". Agora no 
 
 O decoder recebe esse hidden state e cell state do encoder e cada célula LSTM vai fazer output de um símbolo e passar à célula seguinte a representação vetorial do símbolo gerado (embedding) e um novo cell state e hidden state atualizado.
 
-2) As células das LSTMs partilham parâmetros ?
+#### 2) As células das LSTMs partilham parâmetros ?
 
 R: Sim, o facto das células LSTM partilharem parâmetros é o que lhes permite generalizar para sequências de tamanhos diferentes, (para palavras de curta e maior duração), mas de notar que estes parâmetros apenas são partilhados dentro da mesma LSTM. 
 
