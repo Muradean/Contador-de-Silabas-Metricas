@@ -4,7 +4,7 @@ Notebook com um modelo que realiza divisão silábica e classifcação tónica c
 Aceitam-se contribuições (pull requests)
 
 
-PERGUNTAS:
+### PERGUNTAS:
 
 1) Porque é que usaste uma LSTM bidireccional como encoder em vez de uma LSTM unidireccional ?
 
