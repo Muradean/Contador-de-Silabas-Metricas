@@ -31,5 +31,4 @@ Neste código ao todo são utilizadas 3 LSTM´s, duas como encoder que constitue
 
 
 ## Demonstração:
-
-https://www.youtube.com/watch?v=bUHtoNzw9SI
+https://www.youtube.com/watch?v=zroU2diFogk&t=15s
